@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <title>Herramientas Hidráulicas</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <ul class="navegación nav nav-item">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Conversor de Unidades</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="conv_caudal.html"
+              >Convertir Caudales</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_pres.html"
+              >Convertir Presión</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_vol.html"
+              >Convertir Volumen</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_area.html"
+              >Convertir Área</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_masa.html"
+              >Convertir Masa</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_long.html"
+              >Convertir Longitud</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_rend.html"
+              >Convertir Rendimiento Agrícola</a
+            >
+          </li>
+         
+      </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fórmulas</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="hazen_williams.html">Fórmula de Hazen Williams</a></li>
+      <li><a class="dropdown-item" href="caudal_riego.html">Caudal de Riego</a></li>
+      <li><a class="dropdown-item" href="tiempo_riego.html">Tiempo de Riego</a></li>
+      <li><a class="dropdown-item" href="potencia_motor.html">Potencia del Motor de la Bomba</a></li>
+      
+  </header>
+
+    <section>
+      <div
+        class="tag_conv container position-absolute start-50 translate-middle-x"
+      >
+        <h4>Conversor de Rendimiento</h4>
+        <div class="mt-2">
+          <form class="d-flex">
+            <input
+              class="texto_conversor form-control me-2"
+              type="number"
+              placeholder="Escriba la cantidad"
+              aria-label="Search"
+              id="i_conv_r"
+            />
+
+            <select class="select picker btn btn-primary" id="select_r_in">
+              <option>t/ha</option>
+              <option>t/cab</option>
+              <option>qq/ha</option>
+              <option selected>qq/cab</option>
+            
+            </select>
+          </form>
+        </div>
+        <div class="mt-2">Es Igual a:</div>
+        <div class="mt-2">
+          <form class="d-flex">
+            <label
+              class="texto_conversor form-control me-2"
+              id="l_conv_r"
+              type="number"
+              aria-label="Search"
+              >0.000000</label
+            >
+
+            <select class="select picker btn btn-primary" id="select_r_out">
+                <option selected>t/ha</option>
+                <option>t/cab</option>
+                <option>qq/ha</option>
+                <option>qq/cab</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="conv_rend.js"></script>
+
+    <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.0-dist\js\popper.min.js"></script>
+    <script src="bootstrap-5.1.0-dist\js\bootstrap.js"></script>
+  </body>
+</html>

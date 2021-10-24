@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <title>Herramientas Hidráulicas</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist\css\bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <ul class="navegación nav nav-item">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Conversor de Unidades</a
+        >
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="conv_caudal.html"
+              >Convertir Caudales</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_pres.html"
+              >Convertir Presión</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_vol.html"
+              >Convertir Volumen</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_area.html"
+              >Convertir Área</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_masa.html"
+              >Convertir Masa</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_long.html"
+              >Convertir Longitud</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="conv_rend.html"
+              >Convertir Rendimiento Agrícola</a
+            >
+          </li>
+         
+      </ul>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Fórmulas</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="hazen_williams.html">Fórmula de Hazen Williams</a></li>
+      <li><a class="dropdown-item" href="caudal_riego.html">Caudal de Riego</a></li>
+      <li><a class="dropdown-item" href="tiempo_riego.html">Tiempo de Riego</a></li>
+      <li><a class="dropdown-item" href="potencia_motor.html">Potencia del Motor de la Bomba</a></li>
+      
+  </header>
+
+    <section>
+      <div
+        class="tag_conv container position-absolute start-50 translate-middle-x"
+      >
+      
+        <h4>Potencia del Motor de la Boma</h4>
+        <div class="mt-2">
+          <form class="d-flex">
+            <div class="texto_HW form-floating d-flex">
+              <input
+                type="number"
+                class=" form-control me-2"
+                id="i_pm_q"
+                placeholder="name@example.com"
+                
+               
+              />
+              <label for="floatingInputGrid">Caudal</label>
+            </div>
+
+            <select class="select_HW select picker btn btn-primary" id="select_pm_q">
+              <option selected>l/s</option>
+              <option>l/min</option>
+              <option>l/h</option>
+              <option>l/d</option>
+              <option>m³/s</option>
+              <option>m³/min</option>
+              <option>m³/h</option>
+              <option>m³/d</option>
+              <option>gal/s</option>
+              <option>gal/min</option>
+              <option>gal/h</option>
+              <option>gal/d</option>
+              <option>galᵘᵏ/s</option>
+              <option>galᵘᵏ/min</option>
+              <option>galᵘᵏ/h</option>
+              <option>galᵘᵏ/d</option>  
+          </select>
+          </form>
+        </div>
+        <div class="mt-2">
+            <form class="d-flex">
+              <div class="texto_HW form-floating d-flex">
+                <input
+                  type="number"
+                  class=" form-control me-2"
+                  id="i_pm_c"
+                  placeholder="name@example.com"
+                 
+                />
+                <label for="floatingInputGrid">Carga de la Bomba</label>
+              </div>
+  
+              <select class="select_HW select picker btn btn-primary" id="select_pm_c">             
+                <option selected>m.c.a</option>
+                <option>bar</option>
+                <option>atm</option>
+                <option>Pa</option>
+                <option>kg/cm²</option>
+                <option>PSI</option>
+              
+              </select>
+            </form>
+          </div>
+
+          
+          
+        <div class="mt-2">
+          <form class="d-flex">
+            <div class="texto_HW form-floating d-flex">
+              <input
+                type="number"
+                class=" form-control me-2"
+                id="i_pm_eb"
+                placeholder="name@example.com"
+                value="0.77" 
+                max="1"              
+              />
+              <label for="floatingInputGrid">Eficiencia Bomba</label>
+            </div>
+
+            <select class="select_HW select picker btn btn-primary" id="select_pm_eb">
+                <option selected>u</option>
+                            
+            </select>
+          </form>
+        </div>
+        
+        <div class="mt-2">
+            <form class="d-flex">
+              <div class="texto_HW form-floating d-flex">
+                <input
+                  type="number"
+                  class=" form-control me-2"
+                  id="i_pm_em"
+                  placeholder="name@example.com"
+                  value="0.93"               
+                  max="1"
+                />
+                <label for="floatingInputGrid">Eficiencia Motor</label>
+              </div>
+  
+              <select class="select_HW select picker btn btn-primary" id="select_pm_em">
+                <option>u</option>
+                              
+              </select>
+            </form>
+          </div>
+          
+          
+         
+
+          <div class="mt-2">Potencia del Motor kW:</div>
+          <label
+          class=" form-control me-2"
+          id="l_pm_c1"
+         
+          aria-label="Search"
+          >0.000000</label>
+          <div class="mt-2">Potencia del Motor cv:</div>
+          <label
+          class=" form-control me-2"
+          id="l_pm_c2"
+          
+          aria-label="Search"
+          >0.000000</label>
+        
+       
+    </section>
+
+    <script src="script.js"></script>
+    <script src="potencia_motor.js"></script>
+
+    <script src="bootstrap-5.1.0-dist\js\jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.0-dist\js\popper.min.js"></script>
+    <script src="bootstrap-5.1.0-dist\js\bootstrap.js"></script>
+  </body>
+</html>

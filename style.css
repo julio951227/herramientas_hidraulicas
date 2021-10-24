@@ -1,0 +1,33 @@
+.navegación {
+    color: white;
+    background-color: darkblue;
+}
+
+.nav-link {
+    color: white;
+}
+
+.tag_conv {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    width: max-content;
+    margin-top: 20px;
+}
+
+.texto_conversor {
+    max-width: 60%;
+}
+
+.texto_HW {
+    max-width: 100%;
+}
+.select_HW {
+    width: 100px;
+}
+.nota{
+    width: 300px;
+    
+}
+
+
